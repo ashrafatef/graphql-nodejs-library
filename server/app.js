@@ -17,9 +17,9 @@ mongoose.connection.once('open',()=>{
 app.use("/graphql",graphqlHTTP({
     schema ,
     graphiql: true
-}));
+}))
 
 
-app.listen(3000 , (req,res)=>{
+app.listen(3001 , (req,res)=>{
     console.log("now running and listening for request on port 3000")
 })
